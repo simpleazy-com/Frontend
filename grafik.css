@@ -1,0 +1,43 @@
+body{
+background: blueviolet;
+}
+
+
+/* THIS IS SIDEBAR */
+.sidebar{
+	width: 20%;
+	height:97%;
+	background: cyan;
+	top: 0;
+	left: 0;
+	position: absolute;
+	border-right: 10px dashed purple;
+	text-transform: uppercase;
+	font-size: 1.6rem;
+	padding-top: 20px;
+	padding-left: 20px;
+}
+.sidebar a{
+	text-decoration: none;
+	background: purple;
+	color: white;
+	padding: 10px;
+}
+.sidebar a:hover{
+	text-decoration: overline;
+}
+.judul{
+	font-size: 1rem;
+	font-weight: bolder;
+	color: darkcyan;
+	background: yellow;
+	padding: 2px;
+}
+.out a{
+	background: yellow;
+	font-size: 8pt;
+	font-weight: bolder;
+	color: darkcyan;
+	padding-left: 0;
+	padding: 1px;
+}

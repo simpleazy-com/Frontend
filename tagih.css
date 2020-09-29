@@ -1,0 +1,145 @@
+body{
+	background: blueviolet;
+}
+.loader{
+	position: relative;
+	display: flex;
+}
+.loader span{
+	display: block;
+	width: 20px;
+	height: 20px;
+	background-color: #fff;
+	border-radius: 50%;
+	margin: 0 5px;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+.loader span:not(:last-child){
+	animation: animate 1s linear infinite;
+}
+.loader span:last-child{
+	animation: jump 1s ease-in-out infinite;
+}
+@keyframes animate{
+	0%{
+		transform: translateX(0);
+	}
+	100%{
+		transform: translateX(30px);
+	}
+}
+@keyframes jump{
+	0%{
+		transform: translate(0, 0);
+	}
+	10%{
+		transform: translate(10px, -10px);
+	}
+	20%{
+		transform: translate(20px, 10px);
+	}
+	30%{
+		transform: translate(30px, -50px);
+	}
+	70%{
+		transform: translate(-150px, -50px);
+	}
+	80%{
+		transform: translate(-140px, 10px);
+	}
+	90%{
+		transform: translate(-130px, -10px);
+	}
+	100%{
+		transform: translate(-120px, 0);
+	}
+}
+
+/* THIS IS SIDEBAR */
+.sidebar{
+	width: 20%;
+	height:97%;
+	background: cyan;
+	top: 0;
+	left: 0;
+	position: absolute;
+	border-right: 10px dashed purple;
+	text-transform: uppercase;
+	font-size: 1.6rem;
+	padding-top: 20px;
+	padding-left: 20px;
+}
+.sidebar a{
+	text-decoration: none;
+	background: purple;
+	color: white;
+	padding: 10px;
+}
+.sidebar a:hover{
+	text-decoration: overline;
+}
+.judul, p{
+	font-size: 1rem;
+	font-weight: bolder;
+	color: darkcyan;
+	background: yellow;
+	padding: 2px;
+}
+.out a{
+	background: yellow;
+	font-size: 8pt;
+	font-weight: bolder;
+	color: darkcyan;
+	padding-left: 0;
+	padding: 1px;
+}
+
+/* THIS IS UR PAGE STYLES */
+.text{
+	margin-left: 450px;
+}
+.text textarea{
+	width: 700px;
+	height: 300px;
+	font-size: 20pt;
+	padding: 10px;
+	background: #FF006E;
+	margin-top: -5px;
+	border: 10px dashed white;
+	box-shadow: 8px 8px 20px 5px black;
+	color: pink;
+}
+.text a{
+	text-transform: uppercase;
+	background: blueviolet;
+	font-weight: bold;
+	padding: 15px;
+	text-decoration: none;
+	color: white;
+	margin-right: 200px;
+	border: 5px dashed #00ffff;
+	float: right;
+	box-shadow: 8px 8px 20px 3px black;
+}
+.text a:hover{
+	border: 5px dotted #00ffff;
+}
+.checklist{
+	width: 680px;
+	height: 50px;
+	margin-top: 70px;
+	margin-bottom: -110px;
+	background: #00ffff;
+	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
+	border: 10px dashed blueviolet;
+	box-shadow: 8px 8px 20px 3px black;
+}
+.link, textarea{
+	box-shadow: 8px 8px 20px 2px black;
+}
+p{
+	margin-top: 100px;
+	width: 700px;
+	box-shadow: 8px 8px 20px 3px black;
+}

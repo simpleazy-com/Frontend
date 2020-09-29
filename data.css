@@ -1,0 +1,97 @@
+body{
+background: blueviolet;
+color: white;
+}
+
+
+/* THIS IS SIDEBAR */
+.sidebar{
+	width: 20%;
+	height:97%;
+	background: cyan;
+	top: 0;
+	left: 0;
+	position: absolute;
+	border-right: 10px dashed purple;
+	text-transform: uppercase;
+	font-size: 1.6rem;
+	padding-top: 20px;
+	padding-left: 20px;
+}
+.sidebar a{
+	text-decoration: none;
+	background: purple;
+	color: white;
+	padding: 10px;
+}
+.sidebar a:hover{
+	text-decoration: overline;
+}
+.judul{
+	font-size: 1rem;
+	font-weight: bolder;
+	color: darkcyan;
+	background: yellow;
+	padding: 2px;
+}
+.out a{
+	background: yellow;
+	font-size: 8pt;
+	font-weight: bolder;
+	color: darkcyan;
+	padding-left: 0;
+	padding: 1px;
+}
+
+
+/* THIS IS UR PAGE STYLE */
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 19%;
+  margin-left: 400px;  
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  color: black;
+}
+
+.ul{
+	margin-left: 400px;
+	width:90%;
+}
+
+#myUL{
+	width: 900px;
+  position: absolute; 
+  height: 450px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  overflow: scroll;
+  margin-top: -5px;
+  border-top: 5px solid cyan;
+  border-left: 5px solid cyan;
+  box-shadow: 8px 8px 23px 3px black;
+}
+#myUL li a {
+  margin-top: -1px; /* Prevent double borders */
+  background-color: black;
+  color: white;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+  border: 1px dotted cyan;
+}
+
+#myUL li a:hover:not(.header) {
+	background: #0095FF;
+}
+.span{
+	padding-right: 5px;
+	padding-left: 5px;
+	background: cyan;
+	font-weight: bolder;
+	color: black;
+}

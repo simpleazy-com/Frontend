@@ -1,0 +1,219 @@
+body{
+background: blueviolet;
+}
+.loader{
+	position: relative;
+	display: flex;
+}
+.loader span{
+	display: block;
+	width: 20px;
+	height: 20px;
+	background-color: #fff;
+	border-radius: 50%;
+	margin: 0 5px;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+.loader span:not(:last-child){
+	animation: animate 1s linear infinite;
+}
+.loader span:last-child{
+	animation: jump 1s ease-in-out infinite;
+}
+@keyframes animate{
+	0%{
+		transform: translateX(0);
+	}
+	100%{
+		transform: translateX(30px);
+	}
+}
+@keyframes jump{
+	0%{
+		transform: translate(0, 0);
+	}
+	10%{
+		transform: translate(10px, -10px);
+	}
+	20%{
+		transform: translate(20px, 10px);
+	}
+	30%{
+		transform: translate(30px, -50px);
+	}
+	70%{
+		transform: translate(-150px, -50px);
+	}
+	80%{
+		transform: translate(-140px, 10px);
+	}
+	90%{
+		transform: translate(-130px, -10px);
+	}
+	100%{
+		transform: translate(-120px, 0);
+	}
+}
+
+/* THIS IS SIDEBAR */
+.sidebar{
+	width: 20%;
+	height:97%;
+	background: cyan;
+	top: 0;
+	left: 0;
+	position: absolute;
+	border-right: 10px dashed purple;
+	text-transform: uppercase;
+	font-size: 1.6rem;
+	padding-top: 20px;
+	padding-left: 20px;
+}
+.sidebar a{
+	text-decoration: none;
+	background: purple;
+	color: white;
+	padding: 10px;
+}
+.sidebar a:hover{
+	text-decoration: overline;
+}
+.judul{
+	font-size: 1rem;
+	font-weight: bolder;
+	color: darkcyan;
+	background: yellow;
+	padding: 2px;
+}
+.out a{
+	background: yellow;
+	font-size: 8pt;
+	font-weight: bolder;
+	color: darkcyan;
+	padding-left: 0;
+	padding: 1px;
+}
+
+
+/* THIS IS UR PAGE STYLE */
+.page{
+	margin-left: 350px;
+	font-size: 1.6rem;
+	color: white;
+	margin-top: 20px;
+	text-transform: uppercase;
+}
+.ta a{
+	background: #74E519;
+	padding: 10px;
+	text-decoration: none;
+	color: black;
+	width: 100px;
+	border: 2px dashed blueviolet;
+	border-bottom-left-radius: 30px;
+}
+.page .ta:hover, .ks:hover, .kp:hover, .nb:hover{
+	text-decoration: overline;
+}
+.nama, .mail, input{
+	background: #000;
+	padding: 10px;
+	font-size: 1rem;
+	width: 200px;
+	color: white;
+}
+.nama, .mail{
+	border-bottom: 2px solid purple;
+}
+input{
+	border-left: 8px dashed purple;
+	border-right: 8px dashed purple;
+	border-bottom: 8px dashed purple;
+	border-top: none;
+}
+.rd{
+	margin-left: 250px;
+	margin-top: -29px;
+}
+.ta a, .rd a, input, .save a, .edit a{
+	box-shadow: 8px 8px 20px 2px black;
+}
+
+/* .ks, .kp, .nb{
+	background: 
+} */
+
+.garis{
+	width: 50px;
+	height: 540px;
+	background: yellow;
+	margin-left: 280px;
+	margin-top: -400px;
+	border:  10px dashed blueviolet;
+}
+.save a, .edit a{
+	color: white;
+	width: 70px;
+	padding: 10px;
+	text-decoration: none;
+	position: absolute;
+	text-align: center;
+}
+.save a:hover, .edit a:hover{
+	border: 5px dashed yellow;
+}
+.save a{
+	background: #FF006E;
+	margin-top: -70px;
+}
+.edit a{
+	background: #FF6A00;
+	margin-left: 110px;
+	margin-top: -70px;
+}
+.n{
+	background: black;
+	width: 400px;
+	height: 450px;
+	margin-left: 420px;
+	margin-top: -520px;
+	border-radius: 50px;
+	box-shadow: 8px 8px 23px 3px black;
+	padding-left: 100px;
+	padding-top: 50px;
+	overflow: auto;
+	border-top-right-radius: 150px;
+	border-right: 15px dashed blueviolet;
+}
+.n li a{
+	text-align: center;
+	color: white;
+	position: absolute;
+	text-decoration: none;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.n li a:hover{
+	text-decoration: overline;
+}
+.active{
+	background: yellowgreen;
+}
+.vertical{
+	background: #2FCDCF;
+	border-top-right-radius: 50px;
+	border-bottom-left-radius: 50px;
+	width: 350px;
+	margin-top: -620px;
+	float: right;
+	height: 60px;
+	margin-right: 150px;
+	text-align: center;
+	font-size: 15pt;
+}
+.vertical p{
+	margin-top: 15px;
+}
+.ic{
+	border: 10px solid blueviolet;
+}

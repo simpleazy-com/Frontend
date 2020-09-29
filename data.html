@@ -1,0 +1,95 @@
+<link rel="stylesheet" href="data.css">
+<link rel="icon" href="mars.png" type="img/png">
+
+<!-- THIS IS SIDEBAR -->
+<div class="sidebar">
+	<a href="index.html" style="background: darkcyan">Dashboard</a><br><br>
+	  <div class="judul">Your Account</div><br>
+	<a href="profile.html">profile</a><br><br>
+	<a href="tagih.html">Tagih</a><br><br>
+	<a href="data.html" style="text-decoration: overline;">lihat data</a><br><br>
+	<a href="grafik.html">statistik</a><br><br>
+	<a href="pemakaian.html">aktivitas</a><br><br>
+
+	<div class="lain">
+	 <div class="judul">Setting</div><br>
+		<a href="laporkan.html" style="background: blue">laporkan</a><br><br>
+		<a href="login.html"style="background: red;">keluar</a><br><br>
+
+		<!-- THIS IS OUT  -->
+		<div class="out">
+			<a href="index.html">What is the Simpleazy</a><br>
+			<a href="rating.html">rating us</a><br>
+			<a href="#">support me with ovo cash</a>
+		</div>
+	</div>
+</div>
+<br>
+
+<!-- THIS IS UR PAGES -->
+
+<input style="background: black; color: white;border: 2px solid cyan;box-shadow: 8px 8px 23px 3px black;" type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name"><br><br><br><br><br><br>
+
+<div class="ul">
+
+<ul id="myUL">
+  <li><a href="#">Annisa Puspitasari <span class="target span" style="float: right;">4/28</span></a></li>
+  <li><a href="#">Annisa Puspitasari <span class="target span" style="float: right;">4/28</span></a></li>
+
+  <li><a href="#">Annisa Puspitasari <span class="target span" style="float: right;">4/28</span></a></li>
+  <li><a href="#">Calvin harris<span class="span" style="float: right;">5/30</span></a></li>
+  <li><a href="#">Annisa Puspitasari <span class="target span" style="float: right;">4/28</span></a></li>
+  <li><a href="#">Annisa Puspitasari <span class="target span" style="float: right;">4/28</span></a></li>
+  <li><a href="#">Annisa Puspitasari <span class="target span" style="float: right;">4/28</span></a></li>
+  <li><a href="#">Calvin harris<span class="span" style="float: right;">5/30</span></a></li>
+  <li><a href="#">Calvin harris<span class="span" style="float: right;">5/30</span></a></li>
+  <li><a href="#">Calvin harris<span class="span" style="float: right;">5/30</span></a></li>
+  <li><a href="#">Calvin harris<span class="span" style="float: right;">5/30</span></a></li>
+  <li><a href="#">Calvin harris<span class="span" style="float: right;">5/30</span></a></li>
+  <li><a href="#">Calvin harris<span class="span" style="float: right;">5/30</span></a></li>
+  <li><a href="#">Calvin harris<span class="span" style="float: right;">5/30</span></a></li>
+  <li><a href="#">Calvin harris<span class="span" style="float: right;">5/30</span></a></li>
+  <li><a href="#">Calvin harris<span class="span" style="float: right;">5/30</span></a></li>
+  <li><a href="#">Calvin harris<span class="span" style="float: right;">5/30</span></a></li>
+  <li><a href="#">Calvin harris<span class="span" style="float: right;">5/30</span></a></li>
+  <li><a href="#">Calvin harris<span class="span" style="float: right;">5/30</span></a></li>
+  <li><a href="#">Calvin harris<span class="span" style="float: right;">5/30</span></a></li>
+  <li><a href="#">Calvin harris<span class="span" style="float: right;">5/30</span></a></li>
+  <li><a href="#">Calvin harris<span class="span" style="float: right;">5/30</span></a></li>
+</ul>
+</div>
+
+<a href="info_anggota.html" style="position: absolute;text-align: center; margin-left: 680px;margin-top: -135px;width: 605px;padding:7px;background: hotpink;color: black; font-weight: bolder;text-decoration:none;border: 6px dotted black;text-transform: uppercase;font-size: 10pt;box-shadow: 8px 8px 23px 3px black;">Setting Anggota dan Simpan info data</a>
+
+<div class="ket" style="position: absolute;text-align: center; margin-left: 630px;margin-top: -70px;width: 100px;padding:5px;background: cyan;color: black; font-weight: bolder;text-decoration:none;border: 6px dashed blueviolet;text-transform: uppercase;font-size: 10pt;">
+  Total Kas:
+  <span class="uang" style="background: #00BDFF;padding-left: 5px; padding-right: 5px">120k</span>
+</div>
+
+<div class="ket" style="position: absolute;text-align: center; margin-left: 770px;margin-top: -70px;width: 100px;padding:5px;background: cyan;color: black; font-weight: bolder;text-decoration:none;border: 6px dashed blueviolet;text-transform: uppercase;font-size: 10pt;">
+  sudah bayar:
+  <span class="bayar" style="background: #41BD43;padding-left: 5px; padding-right: 5px">12</span>
+</div>
+<div class="ket" style="position: absolute;text-align: center; margin-left: 910px;margin-top: -70px;width: 100px;padding:5px;background: cyan;color: black; font-weight: bolder;text-decoration:none;border: 6px dashed blueviolet;text-transform: uppercase;font-size: 10pt;">
+  belum bayar:
+  <span class="gak" style="background: hotpink;padding-left: 5px; padding-right: 5px">5</span>
+</div>
+
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
